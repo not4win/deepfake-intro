@@ -88,7 +88,7 @@ def download_image(link, image_data, query):
         download_image.delta -= 1
         print("[!] Issue getting: {}\n[!] Error:: {}".format(link, e))
 
-def scrape(keyword, limit=500):
+def scrape(keyword, limit=50):
     # set stack limit
     sys.setrecursionlimit(1000000)
 
@@ -147,3 +147,5 @@ def scrape(keyword, limit=500):
             pass
 
     print("[%] Downloaded {} images.".format(download_image.delta))
+
+#scrape("vegeta")
